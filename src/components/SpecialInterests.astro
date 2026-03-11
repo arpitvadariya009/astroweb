@@ -1,0 +1,218 @@
+---
+---
+<section class="section interests-section" id="interests">
+  <div class="container">
+    <div class="section-center reveal">
+      <div class="glow-badge">SPECIAL INTERESTS</div>
+      <h2 class="section-title">Pioneering the <span class="text-gradient">Future of Neuro-Rehab</span></h2>
+    </div>
+
+    <div class="interests-grid row-gap">
+      <!-- Interest Area 1 -->
+      <div class="interest-box reveal">
+        <div class="interest-header">
+           <div class="interest-icon">🧠</div>
+           <h3 class="interest-name">Neuro Modulation</h3>
+        </div>
+        <p class="interest-p">
+          Stereotactic & Functional Neurosurgery, Stereotactic Radiosurgery (SRS), and specialized Neuro Rehabilitation protocols.
+        </p>
+        <div class="institute-badge glass-card">
+           <strong>JIOMSN</strong>
+           <p>Movement Disorders & Neurosurgery Facility</p>
+        </div>
+        <p class="interest-p mt-4">
+          Dedicated centre for Parkinson's, Tremors, Dystonia, and Intractable Pain. Pioneering RF and ablative surgeries in India.
+        </p>
+      </div>
+
+      <!-- Interest Area 2 -->
+      <div class="interest-box premium-box reveal reveal-delay-2">
+        <div class="glow-blob"></div>
+        <div class="interest-header">
+           <div class="interest-icon">⚙️</div>
+           <h3 class="interest-name">Bio-Design & Bio-Engineering</h3>
+        </div>
+        <p class="interest-p">
+          Leading a specialized team of doctors and engineers at <strong>NewRo Kaaya Pte Ltd</strong> to design affordable medical devices.
+        </p>
+        
+        <ul class="device-list">
+          <li>
+            <div class="check">✓</div>
+            <span><strong>Holosuit:</strong> Next-gen rehabilitation tech.</span>
+          </li>
+          <li>
+            <div class="check">✓</div>
+            <span><strong>WALK-FREE:</strong> Motorized body-weight support.</span>
+          </li>
+          <li>
+            <div class="check">✓</div>
+            <span><strong>Balance Pro:</strong> Low-cost Bluetooth assessment.</span>
+          </li>
+          <li>
+            <div class="check">✓</div>
+            <span><strong>Upper Limb Unweighing:</strong> Stroke rehab system.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .interests-section {
+    background-color: var(--bg-slate);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-center {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .glow-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 800;
+    border-radius: 100px;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+  }
+
+  .interests-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .interest-box {
+    background: white;
+    padding: 60px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.03);
+    position: relative;
+    transition: var(--transition-smooth);
+  }
+
+  .interest-box:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-premium);
+  }
+
+  .interest-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .interest-icon {
+    font-size: 2.5rem;
+    background: var(--bg-slate);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .interest-name {
+    font-size: 1.75rem;
+    color: var(--text-main);
+  }
+
+  .interest-p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .mt-4 { margin-top: 24px; }
+
+  .institute-badge {
+    margin-top: 32px;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(126, 34, 206, 0.05) 100%);
+    border: 1px solid rgba(79, 70, 229, 0.1);
+  }
+
+  .institute-badge strong {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    display: block;
+  }
+
+  .institute-badge p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .premium-box {
+    background: #0f172a;
+    color: white;
+    overflow: hidden;
+  }
+
+  .premium-box .interest-name { color: white; }
+  .premium-box .interest-p { color: rgba(255, 255, 255, 0.7); }
+
+  .glow-blob {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+    opacity: 0.2;
+    filter: blur(40px);
+  }
+
+  .device-list {
+    margin-top: 40px;
+    list-style: none;
+  }
+
+  .device-list li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+
+  .check {
+    width: 24px;
+    height: 24px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .device-list strong {
+    color: var(--accent-color);
+  }
+
+  @media (max-width: 992px) {
+    .interests-grid {
+      grid-template-columns: 1fr;
+    }
+    .section-title { font-size: 2.5rem; }
+  }
+</style>

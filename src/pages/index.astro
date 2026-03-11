@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import InTheNews from '../components/InTheNews.astro';
+import SpecialInterests from '../components/SpecialInterests.astro';
+import Patents from '../components/Patents.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Dr. Sharan Srinivasan | Pioneering Neurosurgeon">
+	<Header />
+	<main>
+		<Hero />
+		<About />
+		<InTheNews />
+		<SpecialInterests />
+		<Patents />
+		<Testimonials />
+	</main>
+	<Footer />
+</Layout>
+
+<script>
+	const observerOptions = {
+		root: null,
+		rootMargin: '0px',
+		threshold: 0.1
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('reveal-visible');
+			}
+		});
+	}, observerOptions);
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const revealElements = document.querySelectorAll('.reveal');
+		revealElements.forEach(el => observer.observe(el));
+	});
+</script>
+
+<style is:global>
+	.reveal {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.reveal-visible {
+		opacity: 1 !important;
+		transform: translateY(0) !important;
+	}
+</style>

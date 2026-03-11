@@ -1,0 +1,110 @@
+---
+---
+<section class="section patents-section" id="patents">
+  <div class="container">
+    <div class="patents-wrapper reveal">
+      <div class="patents-info">
+        <h2 class="section-title">Global <span class="text-gradient">Patents</span></h2>
+        <p class="section-subtitle">Pioneering intellectual property in the field of intelligent neuro-rehabilitation and functional modeling.</p>
+      </div>
+
+      <div class="patents-grid">
+        <div class="patent-card">
+          <div class="patent-id">NO. 201941038618</div>
+          <h4 class="patent-name">Advanced Neuro Rehabilitation Curriculum</h4>
+          <p class="patent-meta">A Novel and Robust Framework for clinical excellence.</p>
+        </div>
+        
+        <div class="patent-card">
+          <div class="patent-id">NO. 202241067553</div>
+          <h4 class="patent-name">Assessment of Functional Brain Circuits</h4>
+          <p class="patent-meta">System and Methodology for predicting independence.</p>
+        </div>
+
+        <div class="patent-card">
+          <div class="patent-id">NO. 202441038844</div>
+          <h4 class="patent-name">Intelligent Rehab Environment</h4>
+          <p class="patent-meta">Advancing Functional Neurosciences with IoMT tech.</p>
+        </div>
+
+        <div class="patent-card">
+          <div class="patent-id">NO. 202441038858</div>
+          <h4 class="patent-name">Multidimensional Prognostic Modelling</h4>
+          <p class="patent-meta">Optimizing Functional Neurosciences outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .patents-section {
+    background: #ffffff;
+  }
+
+  .patents-wrapper {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .patents-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .patent-card {
+    background: var(--bg-slate);
+    padding: 32px;
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .patent-card:hover {
+    background: white;
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+  }
+
+  .patent-id {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    opacity: 0.8;
+  }
+
+  .patent-name {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .patent-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  @media (max-width: 992px) {
+    .patents-wrapper {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .patents-info {
+        margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .patents-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

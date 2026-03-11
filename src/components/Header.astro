@@ -1,0 +1,132 @@
+---
+---
+<header class="header">
+  <div class="container header-container">
+    <a href="/" class="logo">
+      <span class="logo-circle">S</span>
+      <div class="logo-text">
+        <span class="dr-title">Dr. Sharan</span>
+        <span class="dr-name">Srinivasan</span>
+      </div>
+    </a>
+    
+    <nav class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#news" class="nav-link">News</a>
+      <a href="#interests" class="nav-link">Specialties</a>
+      <a href="#testimonials" class="nav-link">Patient Stories</a>
+    </nav>
+
+    <a href="#appointment" class="btn-premium">Book Now</a>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-smooth);
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-main);
+  }
+
+  .logo-circle {
+    width: 40px;
+    height: 40px;
+    background: var(--premium-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .dr-title {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .dr-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+    position: relative;
+    font-size: 0.95rem;
+  }
+
+  .nav-link:hover {
+    color: var(--primary-color);
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: var(--transition-smooth);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  @media (max-width: 992px) {
+    .nav-links {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .logo-text {
+      display: none;
+    }
+    .btn-premium {
+      padding: 10px 20px;
+      font-size: 0.85rem;
+    }
+  }
+</style>

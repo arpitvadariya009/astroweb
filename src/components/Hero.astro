@@ -1,0 +1,247 @@
+---
+---
+<section class="hero">
+  <div class="mesh-bg"></div>
+  <div class="container hero-container">
+    <div class="hero-content reveal">
+      <div class="badge">TRUSTED NEUROSURGEON</div>
+      <h1 class="hero-title">
+        Revolutionizing <br />
+        <span class="text-gradient">Neurological Care</span>
+      </h1>
+      <p class="hero-subtitle">
+        Dr. Sharan Srinivasan, a pioneering Stereotactic & Functional Neurosurgeon with over 8000 surgeries performed, dedicated to restoring life through innovation.
+      </p>
+      
+      <div class="credentials-row">
+        <div class="cred-item">
+          <span class="cred-value">8000+</span>
+          <span class="cred-label">Surgeries</span>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-value">25+</span>
+          <span class="cred-label">Years Exp.</span>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-value">4</span>
+          <span class="cred-label">Patents</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#appointment" class="btn-premium">Book Consultation</a>
+        <a href="#about" class="btn-outline">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero-image-container">
+      <div class="glow-sphere"></div>
+      <div class="portrait-wrapper">
+        <img src="/images/portrait.png" alt="Dr. Sharan Srinivasan" class="portrait-img" />
+        <div class="floating-badge badge-1">Founder & CMD</div>
+        <div class="floating-badge badge-2">DNB, MNAMS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    padding: 160px 0 100px;
+    background-color: #0f172a;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .mesh-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.15) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, rgba(126, 34, 206, 0.15) 0, transparent 50%), 
+                radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.1) 0, transparent 50%);
+    opacity: 0.8;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+
+  .credentials-row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .cred-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cred-value {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+  }
+
+  .cred-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .cred-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 20px;
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: white;
+  }
+
+  .hero-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .glow-sphere {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+    filter: blur(60px);
+    opacity: 0.3;
+    z-index: -1;
+    bottom: 10%;
+    animation: pulse 8s infinite alternate;
+  }
+
+  @keyframes pulse {
+    from { transform: scale(1); opacity: 0.2; }
+    to { transform: scale(1.2); opacity: 0.4; }
+  }
+
+  .portrait-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .portrait-img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+  }
+
+  .floating-badge {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .badge-1 { top: 20%; right: -20px; }
+  .badge-2 { bottom: 30%; left: -20px; }
+
+  @media (max-width: 1200px) {
+    .hero-title { font-size: 3.5rem; }
+    .badge-1, .badge-2 { display: none; }
+  }
+
+  @media (max-width: 992px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .credentials-row { justify-content: center; }
+    .hero-actions { justify-content: center; }
+  }
+
+  @media (max-width: 768px) {
+    .hero { padding-top: 120px; }
+    .hero-title { font-size: 2.8rem; }
+  }
+</style>

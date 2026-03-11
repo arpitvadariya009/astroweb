@@ -1,0 +1,182 @@
+---
+---
+<section class="section testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="test-header reveal">
+      <h2 class="section-title text-center">Patient <span class="text-gradient">Stories</span></h2>
+      <p class="section-subtitle text-center">Real impact, real recoveries. Hear from those whose lives have been transformed.</p>
+    </div>
+
+    <div class="stories-grid">
+      <div class="story-card reveal">
+        <div class="story-video">
+          <img src="/images/patient1_1773220435622.png" alt="Patient Story" />
+          <div class="play-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span>Watch Transformation</span>
+          </div>
+        </div>
+        <div class="story-info">
+          <h4 class="patient-name">Life Restored</h4>
+          <p class="patient-quote">"The precision and care I received was beyond my expectations."</p>
+        </div>
+      </div>
+
+      <div class="story-card reveal reveal-delay-1">
+        <div class="story-video">
+          <img src="/images/patient2_1773220458215.png" alt="Patient Story" />
+          <div class="play-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span>Hear the Journey</span>
+          </div>
+        </div>
+        <div class="story-info">
+          <h4 class="patient-name">A New Beginning</h4>
+          <p class="patient-quote">"Dr. Sharan's innovation gave me back my mobility."</p>
+        </div>
+      </div>
+
+      <div class="story-card reveal reveal-delay-2">
+        <div class="story-video">
+          <img src="/images/patient3_1773220480052.png" alt="Patient Story" />
+          <div class="play-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span>Watch Success</span>
+          </div>
+        </div>
+        <div class="story-info">
+          <h4 class="patient-name">Grateful & Recovered</h4>
+          <p class="patient-quote">"Expertise that matches the highest global standards."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials-section {
+    background: var(--bg-slate);
+  }
+
+  .text-center { text-align: center; margin-left: auto; margin-right: auto; }
+
+  .test-header {
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .story-card {
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-smooth);
+  }
+
+  .story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-premium);
+  }
+
+  .story-video {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .story-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+
+  .story-card:hover .story-video img {
+    transform: scale(1.1);
+  }
+
+  .play-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    color: white;
+  }
+
+  .play-btn {
+    width: 64px;
+    height: 64px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+    color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s;
+  }
+
+  .story-card:hover .play-btn {
+    transform: scale(1.1);
+    background: var(--premium-gradient);
+    color: white;
+  }
+
+  .play-overlay span {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .story-info {
+    padding: 32px;
+  }
+
+  .patient-name {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 8px;
+  }
+
+  .patient-quote {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 992px) {
+    .stories-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .stories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
