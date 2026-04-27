@@ -1,16 +1,22 @@
 ---
 ---
-<section class="hero">
+<section class="hero" id="home">
   <div class="mesh-bg"></div>
   <div class="container hero-container">
     <div class="hero-content reveal">
-      <div class="badge">TRUSTED NEUROSURGEON</div>
+      <div class="badge-row">
+        <div class="badge">TRUSTED NEUROSURGEON</div>
+        <div class="badge badge-guitar">🎸 The Guitar Surgeon</div>
+      </div>
       <h1 class="hero-title">
-        Revolutionizing <br />
-        <span class="text-gradient">Neurological Care</span>
+        Rebooting <br />
+        <span class="text-gradient">The Brain</span>
       </h1>
+      <p class="hero-quote">
+        "At my core, I am a healer. Everything else I do is an extension of that calling."
+      </p>
       <p class="hero-subtitle">
-        Dr. Sharan Srinivasan, a pioneering Stereotactic & Functional Neurosurgeon with over 8000 surgeries performed, dedicated to restoring life through innovation.
+        Dr. Sharan Srinivasan — Clinician. Innovator. Author. Champion for Functional Recovery. A leading Stereotactic & Functional Neurosurgeon standing at the intersection of clinical excellence and futuristic vision.
       </p>
       
       <div class="credentials-row">
@@ -25,8 +31,13 @@
         </div>
         <div class="cred-divider"></div>
         <div class="cred-item">
-          <span class="cred-value">4</span>
-          <span class="cred-label">Patents</span>
+          <span class="cred-value">17+</span>
+          <span class="cred-label">Patents & TMs</span>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-value">5</span>
+          <span class="cred-label">Devices Built</span>
         </div>
       </div>
 
@@ -34,16 +45,31 @@
         <a href="#appointment" class="btn-premium">Book Consultation</a>
         <a href="#about" class="btn-outline">Learn More</a>
       </div>
-    </div>
 
-    <div class="hero-image-container">
-      <div class="glow-sphere"></div>
-      <div class="portrait-wrapper">
-        <img src="/images/portrait.png" alt="Dr. Sharan Srinivasan" class="portrait-img" />
-        <div class="floating-badge badge-1">Founder & CMD</div>
-        <div class="floating-badge badge-2">DNB, MNAMS</div>
+      <div class="hero-tagline">
+        <span>PRS Neurosciences</span>
+        <span class="tag-dot">·</span>
+        <span>Newro Kaaya</span>
+        <span class="tag-dot">·</span>
+        <span>Bengaluru, India</span>
       </div>
     </div>
+
+    <div class="hero-image-container reveal reveal-delay-2">
+      <div class="glow-sphere"></div>
+      <div class="portrait-wrapper">
+        <img src="/images/portrait.png" alt="Dr. Sharan Srinivasan — Functional Neurosurgeon" class="portrait-img" />
+        <div class="floating-badge badge-1">Founder & CMD</div>
+        <div class="floating-badge badge-2">DNB, MNAMS</div>
+        <div class="floating-badge badge-3">Amazon Bestseller</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
 
@@ -52,7 +78,7 @@
     position: relative;
     padding: 160px 0 100px;
     background-color: #0f172a;
-    min-height: 95vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -64,10 +90,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.15) 0, transparent 50%), 
-                radial-gradient(at 100% 0%, rgba(126, 34, 206, 0.15) 0, transparent 50%), 
-                radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.1) 0, transparent 50%);
-    opacity: 0.8;
+    background: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.2) 0, transparent 55%), 
+                radial-gradient(at 100% 0%, rgba(126, 34, 206, 0.2) 0, transparent 55%), 
+                radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.12) 0, transparent 55%);
   }
 
   .hero-container {
@@ -79,39 +104,64 @@
     z-index: 2;
   }
 
+  /* Badges */
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
   .badge {
     display: inline-block;
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.1);
+    padding: 7px 16px;
+    background: rgba(255, 255, 255, 0.08);
     color: var(--accent-color);
     border-radius: 100px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
+    letter-spacing: 1.5px;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
+  .badge-guitar {
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+  }
+
   .hero-title {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     color: white;
-    margin-bottom: 24px;
-    line-height: 1.1;
+    margin-bottom: 16px;
+    line-height: 1.05;
+  }
+
+  .hero-quote {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.55);
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent-color);
+    line-height: 1.6;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.68);
     margin-bottom: 40px;
-    max-width: 600px;
+    max-width: 580px;
+    line-height: 1.75;
   }
 
   .credentials-row {
     display: flex;
     align-items: center;
-    gap: 32px;
-    margin-bottom: 48px;
+    gap: 28px;
+    margin-bottom: 44px;
+    flex-wrap: wrap;
   }
 
   .cred-item {
@@ -121,25 +171,31 @@
 
   .cred-value {
     font-family: var(--font-display);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 800;
     color: white;
+    line-height: 1;
   }
 
   .cred-label {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   .cred-divider {
     width: 1px;
-    height: 40px;
+    height: 36px;
     background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
   }
 
   .hero-actions {
     display: flex;
-    gap: 20px;
+    gap: 16px;
+    flex-wrap: wrap;
   }
 
   .btn-outline {
@@ -156,13 +212,33 @@
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: var(--transition-smooth);
+    text-decoration: none;
   }
 
   .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: white;
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255,255,255,0.5);
   }
 
+  .hero-tagline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+
+  .hero-tagline span {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .tag-dot { color: rgba(255,255,255,0.2) !important; font-size: 1rem !important; }
+
+  /* Image side */
   .hero-image-container {
     position: relative;
     display: flex;
@@ -172,31 +248,32 @@
 
   .glow-sphere {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
-    filter: blur(60px);
-    opacity: 0.3;
-    z-index: -1;
-    bottom: 10%;
+    filter: blur(70px);
+    opacity: 0.25;
+    z-index: 0;
+    bottom: 5%;
     animation: pulse 8s infinite alternate;
   }
 
   @keyframes pulse {
-    from { transform: scale(1); opacity: 0.2; }
-    to { transform: scale(1.2); opacity: 0.4; }
+    from { transform: scale(1); opacity: 0.18; }
+    to { transform: scale(1.25); opacity: 0.35; }
   }
 
   .portrait-wrapper {
     position: relative;
     width: 100%;
-    max-width: 450px;
-    animation: float 6s ease-in-out infinite;
+    max-width: 440px;
+    animation: float 7s ease-in-out infinite;
+    z-index: 1;
   }
 
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-18px); }
   }
 
   .portrait-img {
@@ -208,40 +285,94 @@
   .floating-badge {
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 12px 20px;
-    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 10px 18px;
+    border-radius: 14px;
     color: white;
     font-weight: 600;
-    font-size: 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    white-space: nowrap;
   }
 
-  .badge-1 { top: 20%; right: -20px; }
-  .badge-2 { bottom: 30%; left: -20px; }
+  .badge-1 { top: 15%; right: -10px; }
+  .badge-2 { bottom: 35%; left: -10px; }
+  .badge-3 { bottom: 18%; right: 5%; font-size: 0.78rem; padding: 8px 14px; }
 
+  /* Scroll indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.3);
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 2;
+    animation: bounce 2.5s ease-in-out infinite;
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.3; }
+    50% { transform: translateX(-50%) translateY(6px); opacity: 0.6; }
+  }
+
+  /* Responsive */
   @media (max-width: 1200px) {
-    .hero-title { font-size: 3.5rem; }
-    .badge-1, .badge-2 { display: none; }
+    .hero-title { font-size: 3.8rem; }
+    .badge-1, .badge-2, .badge-3 { display: none; }
   }
 
   @media (max-width: 992px) {
+    .hero {
+      padding: 140px 0 80px;
+      min-height: auto;
+    }
     .hero-container {
       grid-template-columns: 1fr;
       text-align: center;
+      gap: 48px;
     }
     .hero-content {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+    .badge-row { justify-content: center; }
+    .hero-quote { text-align: left; }
+    .hero-subtitle { text-align: center; max-width: 100%; }
     .credentials-row { justify-content: center; }
     .hero-actions { justify-content: center; }
+    .hero-tagline { justify-content: center; }
+    .hero-image-container { max-width: 380px; margin: 0 auto; }
+    .scroll-indicator { display: none; }
   }
 
   @media (max-width: 768px) {
-    .hero { padding-top: 120px; }
-    .hero-title { font-size: 2.8rem; }
+    .hero { padding-top: 110px; }
+    .hero-title { font-size: 3rem; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-title { font-size: 2.4rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .cred-value { font-size: 1.4rem; }
+    .hero-quote { font-size: 0.95rem; }
+    .credentials-row { gap: 16px; }
+    .cred-divider { height: 28px; }
+    .btn-outline { padding: 12px 24px; font-size: 0.9rem; }
   }
 </style>

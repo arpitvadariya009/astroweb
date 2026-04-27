@@ -1,0 +1,312 @@
+---
+---
+<section class="section mission-section" id="mission">
+  <div class="mission-bg"></div>
+  <div class="container">
+    <div class="mission-grid">
+      <!-- Left: Vision -->
+      <div class="mission-left reveal">
+        <div class="mission-badge">HIS VISION & MISSION</div>
+        <h2 class="mission-title">
+          Where <span class="text-gradient">Function</span> Meets<br/>Human Dignity
+        </h2>
+        <blockquote class="vision-quote">
+          "To build a world where brain and functional care isn't limited by geography or wealth — where we may not cure everyone, but we give our all to each one."
+        </blockquote>
+        <p class="mission-text">
+          Dr. Sharan stands for <strong>effort as much as excellence</strong> — for showing up, skillfully and sincerely, in every case, every day. He knows what many won't say aloud: "We may not win every time — but we never stop fighting."
+        </p>
+
+        <div class="stands-for">
+          <div class="sf-title">What He Stands For</div>
+          <ul class="sf-list">
+            <li><span class="sf-dot"></span>Healing patients with precision neuromodulation & cutting-edge functional neurosurgery</li>
+            <li><span class="sf-dot"></span>Combining advanced neurorehabilitation with technology to help people walk, speak, and live again</li>
+            <li><span class="sf-dot"></span>Delivering affordable gold standards of care so every life has access to hope</li>
+            <li><span class="sf-dot"></span>Democratizing healthcare — making world-class functional neuroscience inclusive and accessible</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: Mission cards -->
+      <div class="mission-right">
+        <div class="mission-card reveal reveal-delay-1">
+          <div class="mc-icon">🎯</div>
+          <h3>His Mission</h3>
+          <p>To heal, to restore, and to innovate — for the one patient in front of him, and for the millions waiting in silence.</p>
+          <ul class="mc-list">
+            <li>Treat using state-of-the-art neuromodulation techniques</li>
+            <li>Build integrated rehab ecosystems that make recovery continuous</li>
+            <li>Use technology to make care more human and accessible</li>
+            <li>Mentor the next generation of clinicians who care deeply</li>
+          </ul>
+        </div>
+
+        <div class="mission-card carepare-card reveal reveal-delay-2">
+          <div class="mc-icon">🧩</div>
+          <h3>CAREPa-Re™ Framework</h3>
+          <p>Dr. Sharan's first-of-its-kind evidence-based analytical matrix — making the unmeasurable, measurable in functional neuroscience.</p>
+          <div class="carepare-pills">
+            <span class="pill">C — Clinical</span>
+            <span class="pill">A — Anatomical</span>
+            <span class="pill">R — Radiological</span>
+            <span class="pill">EPa — Etio-pathological</span>
+            <span class="pill accent-pill">Re — Rehabilitation strategies</span>
+          </div>
+          <p class="carepare-sub">Now at the core of <strong>newro LOGICS</strong> — turning brain profiles into data, and data into decisions.</p>
+        </div>
+
+        <div class="mission-card neuro-octane reveal reveal-delay-3">
+          <div class="mc-icon">🚀</div>
+          <h3>The Neuro-Octane Model</h3>
+          <p>Dr. Sharan's larger vision for transforming global neurocare — Function-first Neuroscience, AI-driven patient-specific therapy, and rehabilitation that is intelligent, affordable, and inclusive.</p>
+          <div class="octane-tag">His Legacy in Motion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mission-section {
+    background: #0f172a;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mission-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(at 80% 20%, rgba(79,70,229,0.12) 0, transparent 55%),
+                radial-gradient(at 20% 80%, rgba(6,182,212,0.08) 0, transparent 55%);
+    pointer-events: none;
+  }
+
+  .mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mission-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    background: rgba(79, 70, 229, 0.2);
+    color: var(--accent-color);
+    font-size: 0.78rem;
+    font-weight: 800;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border: 1px solid rgba(79,70,229,0.3);
+  }
+
+  .mission-title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 28px;
+    line-height: 1.15;
+  }
+
+  .vision-quote {
+    border-left: 3px solid var(--accent-color);
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.75);
+    font-style: italic;
+    line-height: 1.65;
+    margin-bottom: 24px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .mission-text {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.8;
+    margin-bottom: 36px;
+  }
+
+  .mission-text strong { color: rgba(255,255,255,0.85); }
+
+  .stands-for { margin-top: 8px; }
+
+  .sf-title {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .sf-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .sf-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+  }
+
+  .sf-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  /* Right: Mission Cards */
+  .mission-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mission-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    transition: var(--transition-smooth);
+  }
+
+  .mission-card:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(79,70,229,0.4);
+    transform: translateY(-4px);
+  }
+
+  .mc-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .mission-card h3 {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  .mission-card p {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .mission-card p:last-child { margin-bottom: 0; }
+
+  .mc-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mc-list li {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.55);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .mc-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 0.8rem;
+  }
+
+  /* CAREPa-Re */
+  .carepare-card {
+    background: rgba(79,70,229,0.08);
+    border-color: rgba(79,70,229,0.25);
+  }
+
+  .carepare-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .pill {
+    padding: 5px 12px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 100px;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .accent-pill {
+    background: rgba(6,182,212,0.15);
+    border-color: rgba(6,182,212,0.35);
+    color: var(--accent-color);
+  }
+
+  .carepare-sub {
+    font-size: 0.85rem !important;
+    margin-top: 8px;
+  }
+
+  .carepare-sub strong { color: rgba(255,255,255,0.85); }
+
+  /* Neuro-Octane */
+  .neuro-octane {
+    background: rgba(126,34,206,0.1);
+    border-color: rgba(126,34,206,0.25);
+  }
+
+  .octane-tag {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--premium-gradient);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 12px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 992px) {
+    .mission-grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    .mission-left { text-align: center; }
+    .vision-quote { text-align: left; }
+    .sf-list { text-align: left; }
+    .mission-title { font-size: 2.5rem; }
+  }
+
+  @media (max-width: 768px) {
+    .mission-title { font-size: 2rem; }
+    .mission-card { padding: 24px; }
+  }
+
+  @media (max-width: 480px) {
+    .mission-title { font-size: 1.75rem; }
+    .pill { font-size: 0.72rem; padding: 4px 10px; }
+  }
+</style>

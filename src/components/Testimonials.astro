@@ -3,14 +3,20 @@
 <section class="section testimonials-section" id="testimonials">
   <div class="container">
     <div class="test-header reveal">
-      <h2 class="section-title text-center">Patient <span class="text-gradient">Stories</span></h2>
-      <p class="section-subtitle text-center">Real impact, real recoveries. Hear from those whose lives have been transformed.</p>
+      <div class="glow-badge">PATIENT STORIES</div>
+      <h2 class="section-title text-center">Where Stories <span class="text-gradient">Became Purpose</span></h2>
+      <p class="section-subtitle text-center">
+        Three patient stories from the 1990s that shattered Dr. Sharan's assumptions about medicine — and led to the founding of PRS Neurosciences in 2011.
+      </p>
+      <blockquote class="origin-quote">
+        "We had treated the disease — but we hadn't touched the disability. We had removed the danger — but not restored the man."
+      </blockquote>
     </div>
 
     <div class="stories-grid">
       <div class="story-card reveal">
         <div class="story-video">
-          <img src="/images/patient1_1773220435622.png" alt="Patient Story" />
+          <img src="/images/patient1_1773220435622.png" alt="Story — When the Clot Was Gone But the Man Wasn't" loading="lazy" />
           <div class="play-overlay">
             <div class="play-btn">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -19,14 +25,15 @@
           </div>
         </div>
         <div class="story-info">
-          <h4 class="patient-name">Life Restored</h4>
-          <p class="patient-quote">"The precision and care I received was beyond my expectations."</p>
+          <div class="story-num">Story 01</div>
+          <h4 class="patient-name">When the Clot Was Gone — But the Man Wasn't</h4>
+          <p class="patient-quote">"The clot has nearly dissolved!" said the young Dr. Sharan triumphantly. But the patient's son replied: "Then why is my father still not conscious? Why can't he walk? Talk? Eat?" <em>— Physical healing is not equal to functional recovery.</em></p>
         </div>
       </div>
 
       <div class="story-card reveal reveal-delay-1">
         <div class="story-video">
-          <img src="/images/patient2_1773220458215.png" alt="Patient Story" />
+          <img src="/images/patient2_1773220458215.png" alt="Story — When Speech Was Lost Forever" loading="lazy" />
           <div class="play-overlay">
             <div class="play-btn">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -35,26 +42,33 @@
           </div>
         </div>
         <div class="story-info">
-          <h4 class="patient-name">A New Beginning</h4>
-          <p class="patient-quote">"Dr. Sharan's innovation gave me back my mobility."</p>
+          <div class="story-num">Story 02</div>
+          <h4 class="patient-name">When Speech Was Lost Forever</h4>
+          <p class="patient-quote">A young newlywed businessman. Textbook-perfect surgery. The scan showed no residual clot. Yet — he recognized no one. No comprehension. No speech. "What have we done? We had restored the body — but not the mind." <em>— The tragedy that changed everything.</em></p>
         </div>
       </div>
 
       <div class="story-card reveal reveal-delay-2">
         <div class="story-video">
-          <img src="/images/patient3_1773220480052.png" alt="Patient Story" />
+          <img src="/images/patient3_1773220480052.png" alt="Story — When a Life Saved Became a Burden" loading="lazy" />
           <div class="play-overlay">
             <div class="play-btn">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
             </div>
-            <span>Watch Success</span>
+            <span>Watch This Story</span>
           </div>
         </div>
         <div class="story-info">
-          <h4 class="patient-name">Grateful & Recovered</h4>
-          <p class="patient-quote">"Expertise that matches the highest global standards."</p>
+          <div class="story-num">Story 03</div>
+          <h4 class="patient-name">When a Life Saved Became a Burden</h4>
+          <p class="patient-quote">An unknown patient saved by emergency surgery. His wife later entered Dr. Sharan's room with fire in her voice: "Why did you save my husband's life?" <em>— What we think is medical success may not always be success for the family.</em></p>
         </div>
       </div>
+    </div>
+
+    <div class="founding-note reveal">
+      <div class="fn-icon">🌱</div>
+      <p>These three stories left a permanent mark. By 2011, that inner transformation took form as <strong>PRS Neurosciences and Mechatronics Research Institute</strong> — a space where the goal is not just clinical recovery, but <strong>functional restoration, human dignity, and lifetime reintegration.</strong></p>
     </div>
   </div>
 </section>
@@ -64,19 +78,58 @@
     background: var(--bg-slate);
   }
 
+  .glow-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+
   .text-center { text-align: center; margin-left: auto; margin-right: auto; }
 
   .test-header {
-    margin-bottom: 60px;
-    max-width: 700px;
+    margin-bottom: 64px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .origin-quote {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text-main);
+    font-weight: 600;
+    border-left: 3px solid var(--primary-color);
+    padding: 16px 20px;
+    background: rgba(79,70,229,0.04);
+    border-radius: 0 12px 12px 0;
+    text-align: left;
+    line-height: 1.6;
   }
 
   .stories-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 28px;
   }
 
   .story-card {
@@ -113,20 +166,20 @@
   .play-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(15, 23, 42, 0.4);
+    background: rgba(15, 23, 42, 0.45);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 14px;
     opacity: 0.9;
     transition: opacity 0.3s;
     color: white;
   }
 
   .play-btn {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     background: white;
     border-radius: 50%;
     display: flex;
@@ -138,45 +191,95 @@
     transition: transform 0.3s;
   }
 
+  .play-btn svg { width: 20px; height: 20px; }
+
   .story-card:hover .play-btn {
-    transform: scale(1.1);
+    transform: scale(1.12);
     background: var(--premium-gradient);
     color: white;
   }
 
   .play-overlay span {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
 
   .story-info {
-    padding: 32px;
+    padding: 28px;
   }
 
-  .patient-name {
-    font-size: 1.25rem;
-    color: var(--text-main);
+  .story-num {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    text-transform: uppercase;
     margin-bottom: 8px;
   }
 
-  .patient-quote {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    font-style: italic;
-    line-height: 1.6;
+  .patient-name {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    line-height: 1.4;
   }
 
+  .patient-quote {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.65;
+  }
+
+  .patient-quote em {
+    display: block;
+    margin-top: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  /* Founding note */
+  .founding-note {
+    margin-top: 56px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 32px;
+    border: 1px solid rgba(79,70,229,0.1);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .fn-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .founding-note p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .founding-note strong { color: var(--text-main); }
+
   @media (max-width: 992px) {
-    .stories-grid {
-      grid-template-columns: 1fr 1fr;
-    }
+    .stories-grid { grid-template-columns: 1fr 1fr; }
+    .section-title { font-size: 2.5rem; }
   }
 
   @media (max-width: 768px) {
-    .stories-grid {
-      grid-template-columns: 1fr;
-    }
+    .stories-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 2rem; }
+    .founding-note { flex-direction: column; gap: 12px; padding: 24px; }
+  }
+
+  @media (max-width: 480px) {
+    .section-title { font-size: 1.75rem; }
+    .story-info { padding: 20px; }
   }
 </style>

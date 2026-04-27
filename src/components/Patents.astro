@@ -4,33 +4,59 @@
   <div class="container">
     <div class="patents-wrapper reveal">
       <div class="patents-info">
-        <h2 class="section-title">Global <span class="text-gradient">Patents</span></h2>
-        <p class="section-subtitle">Pioneering intellectual property in the field of intelligent neuro-rehabilitation and functional modeling.</p>
+        <div class="glow-badge">INTELLECTUAL PROPERTY</div>
+        <h2 class="section-title">Global <span class="text-gradient">Patents & IP</span></h2>
+        <p class="section-subtitle">Each piece of intellectual property contributes toward building affordable gold standards in neurocare — without compromising quality or technology.</p>
+
+        <div class="ip-stats">
+          <div class="ip-stat">
+            <span class="ip-num">15+</span>
+            <span class="ip-label">Trademarks</span>
+          </div>
+          <div class="ip-divider"></div>
+          <div class="ip-stat">
+            <span class="ip-num">2</span>
+            <span class="ip-label">Granted Patents</span>
+          </div>
+          <div class="ip-divider"></div>
+          <div class="ip-stat">
+            <span class="ip-num">15+</span>
+            <span class="ip-label">Patents Pending</span>
+          </div>
+        </div>
+
+        <p class="patents-mission">
+          This IP portfolio reflects the mission to make a <strong>fundamental difference in functional neuroscience</strong> — not just in labs and journals, but at the bedside.
+        </p>
       </div>
 
       <div class="patents-grid">
         <div class="patent-card">
           <div class="patent-id">NO. 201941038618</div>
           <h4 class="patent-name">Advanced Neuro Rehabilitation Curriculum</h4>
-          <p class="patent-meta">A Novel and Robust Framework for clinical excellence.</p>
+          <p class="patent-meta">A Novel and Robust Framework for clinical excellence in neurorehabilitation.</p>
+          <span class="patent-status granted">✓ Granted</span>
         </div>
         
         <div class="patent-card">
           <div class="patent-id">NO. 202241067553</div>
           <h4 class="patent-name">Assessment of Functional Brain Circuits</h4>
-          <p class="patent-meta">System and Methodology for predicting independence.</p>
+          <p class="patent-meta">System and Methodology for predicting independence and functional recovery.</p>
+          <span class="patent-status granted">✓ Granted</span>
         </div>
 
         <div class="patent-card">
           <div class="patent-id">NO. 202441038844</div>
           <h4 class="patent-name">Intelligent Rehab Environment</h4>
-          <p class="patent-meta">Advancing Functional Neurosciences with IoMT tech.</p>
+          <p class="patent-meta">Advancing Functional Neurosciences with IoMT technology integration.</p>
+          <span class="patent-status pending">⏳ Pending</span>
         </div>
 
         <div class="patent-card">
           <div class="patent-id">NO. 202441038858</div>
           <h4 class="patent-name">Multidimensional Prognostic Modelling</h4>
-          <p class="patent-meta">Optimizing Functional Neurosciences outcomes.</p>
+          <p class="patent-meta">Optimizing Functional Neurosciences outcomes through data-driven models.</p>
+          <span class="patent-status pending">⏳ Pending</span>
         </div>
       </div>
     </div>
@@ -42,69 +68,186 @@
     background: #ffffff;
   }
 
+  .glow-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+
   .patents-wrapper {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 80px;
-    align-items: center;
+    align-items: start;
   }
+
+  .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 36px;
+  }
+
+  .ip-stats {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--bg-slate);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(79,70,229,0.08);
+  }
+
+  .ip-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+
+  .ip-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--premium-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .ip-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ip-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(0,0,0,0.08);
+    flex-shrink: 0;
+  }
+
+  .patents-mission {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .patents-mission strong { color: var(--text-main); }
 
   .patents-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 20px;
   }
 
   .patent-card {
     background: var(--bg-slate);
-    padding: 32px;
+    padding: 28px;
     border-radius: var(--radius-md);
     transition: var(--transition-smooth);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .patent-card:hover {
     background: white;
     border-color: var(--primary-color);
     box-shadow: var(--shadow-md);
-    transform: translateY(-5px);
+    transform: translateY(-6px);
   }
 
   .patent-id {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 800;
     color: var(--primary-color);
     letter-spacing: 1px;
-    margin-bottom: 12px;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   .patent-name {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--text-main);
-    margin-bottom: 12px;
     line-height: 1.4;
   }
 
   .patent-meta {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     font-style: italic;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .patent-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin-top: 4px;
+    align-self: flex-start;
+  }
+
+  .patent-status.granted {
+    background: rgba(16,185,129,0.1);
+    color: #059669;
+    border: 1px solid rgba(16,185,129,0.25);
+  }
+
+  .patent-status.pending {
+    background: rgba(245,158,11,0.1);
+    color: #d97706;
+    border: 1px solid rgba(245,158,11,0.25);
+  }
+
+  @media (max-width: 1100px) {
+    .section-title { font-size: 2.4rem; }
   }
 
   @media (max-width: 992px) {
     .patents-wrapper {
       grid-template-columns: 1fr;
+      gap: 48px;
       text-align: center;
     }
-    .patents-info {
-        margin-bottom: 40px;
-    }
+    .patents-info { text-align: center; }
+    .ip-stats { justify-content: center; }
+    .patents-mission { text-align: left; }
+    .section-subtitle { text-align: left; }
   }
 
   @media (max-width: 768px) {
-    .patents-grid {
-      grid-template-columns: 1fr;
-    }
+    .section-title { font-size: 2rem; }
+    .patents-grid { grid-template-columns: 1fr; }
+    .ip-stats { flex-direction: column; gap: 16px; }
+    .ip-divider { width: 60px; height: 1px; }
+  }
+
+  @media (max-width: 480px) {
+    .section-title { font-size: 1.75rem; }
+    .patent-card { padding: 20px; }
+    .ip-num { font-size: 1.6rem; }
   }
 </style>

@@ -3,56 +3,56 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
+import Mission from '../components/Mission.astro';
 import InTheNews from '../components/InTheNews.astro';
 import SpecialInterests from '../components/SpecialInterests.astro';
 import Patents from '../components/Patents.astro';
+import Media from '../components/Media.astro';
 import Testimonials from '../components/Testimonials.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Dr. Sharan Srinivasan | Pioneering Neurosurgeon">
+<Layout title="Dr. Sharan Srinivasan | Functional Neurosurgeon · Clinician · Innovator · Author">
 	<Header />
 	<main>
 		<Hero />
 		<About />
+		<Mission />
 		<InTheNews />
 		<SpecialInterests />
 		<Patents />
+		<Media />
 		<Testimonials />
 	</main>
 	<Footer />
 </Layout>
 
 <script>
+	// Intersection Observer for reveal animations
 	const observerOptions = {
 		root: null,
-		rootMargin: '0px',
-		threshold: 0.1
+		rootMargin: '0px 0px -60px 0px',
+		threshold: 0.08
 	};
 
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add('reveal-visible');
+				observer.unobserve(entry.target); // fire once
 			}
 		});
 	}, observerOptions);
 
-	document.addEventListener('DOMContentLoaded', () => {
+	// Run on DOM ready
+	function initReveal() {
 		const revealElements = document.querySelectorAll('.reveal');
 		revealElements.forEach(el => observer.observe(el));
-	});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initReveal);
+	} else {
+		initReveal();
+	}
 </script>
-
-<style is:global>
-	.reveal {
-		opacity: 0;
-		transform: translateY(30px);
-		transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.reveal-visible {
-		opacity: 1 !important;
-		transform: translateY(0) !important;
-	}
-</style>
