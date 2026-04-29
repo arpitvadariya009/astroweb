@@ -14,8 +14,8 @@
     <div class="media-grid">
       <!-- Book -->
       <div class="media-card book-card reveal">
-        <div class="media-icon-wrap book-icon-wrap">
-          <span class="media-emoji">📘</span>
+        <div class="book-cover-wrap">
+          <img src="https://framerusercontent.com/images/tuhXWqrEqyU4sDSbHig2bjYjVE.jpg" alt="Rebooting the Brain — Book Cover" class="book-cover-img" loading="lazy" />
         </div>
         <div class="media-type-badge">AMAZON BESTSELLER</div>
         <h3 class="media-card-title">"Rebooting the Brain"</h3>
@@ -187,6 +187,21 @@
   .media-emoji { font-size: 1.8rem; }
 
   /* Icon backgrounds */
+  .book-cover-wrap {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+  .book-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+  }
+  .book-card:hover .book-cover-img { transform: scale(1.05); }
   .book-icon-wrap { background: linear-gradient(135deg, #ede9fe, #ddd6fe); }
   .podcast-icon-wrap { background: linear-gradient(135deg, #ecfdf5, #d1fae5); }
   .docu-icon-wrap { background: linear-gradient(135deg, #fef3c7, #fde68a); }
